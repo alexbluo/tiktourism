@@ -4,7 +4,7 @@ class Restaurant(models.Model):
     name = models.CharField(max_length=100)
     rating = models.FloatField()
     image = models.CharField(max_length=200)
-    time_spent = models.FloatField()
+    time_spent = models.FloatField(default=0)
     proximity = models.FloatField()
     prox_mi = models.BooleanField()
     liked = models.BooleanField()
